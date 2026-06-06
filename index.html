@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoldPlaques | Official Site</title>
+
+<!-- Tailwind (for layout utilities) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- GSAP animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- YOUR CSS FILE -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <div class="nav-inner">
+        <h1 class="logo">GoldPlaques</h1>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="tracks.html">Tracks</a>
+            <a href="beats.html">Beats</a>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="title">GoldPlaques</h1>
+        <p class="subtitle">Sotho Hop Music Producer</p>
+
+        <p class="desc">
+            Northern Sotho Hop sound — crisp bass, emotional textures, and clean bounce.
+        </p>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="card">
+
+        <h2 class="label">Featured Beat</h2>
+
+        <div class="row">
+
+            <div>
+                <p class="beat-title">Midi 70 (Tory Lanez Type Beat)</p>
+
+                <div class="wave">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+
+                <p class="meta">140 BPM · Min Minor</p>
+            </div>
+
+            <iframe class="player"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/825092878"
+                frameborder="0">
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="grid">
+        <a href="bio.html">Artist Bio</a>
+        <a href="tracks.html">Tracks</a>
+        <a href="beats.html">Beats</a>
+        <a href="mailto:thelyricalcartel.lesotho@gmail.com">Contact</a>
+    </section>
+
+</div>
+
+<script>
+gsap.to(".page", {
+    opacity: 1,
+    y: 0,
+    duration: 1
+});
+</script>
+
+</body>
+</html>
